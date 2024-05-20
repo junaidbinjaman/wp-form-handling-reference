@@ -1,0 +1,22 @@
+{
+    "name": "junaidbinjaman/react-chrome-extension-boilerplate-1-main",
+    "autoload": {
+        "psr-4": {
+            "Junaidbinjaman\\ReactChromeExtensionBoilerplate1Main\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "junaidbinjaman",
+            "email": "me@junaidbinjaman.com"
+        }
+    ],
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

@@ -1,35 +1,46 @@
-# React Chrome Extension Boilerplate
+# WordPress Form Handling Plugin
 
-Boilerplate for building Chrome Extensions in React and TypeScript using a simple Webpack build process.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Getting Started
+This WordPress plugin was developed to learn proper form handling in WordPress. It serves as a reference for best practices in form processing, including validation, sanitization, and secure data handling.
 
-1. `npm i` to install dependancies
-2. `npm start` to start running the fast development mode Webpack build process that bundle files into the `dist` folder
-3. `npm i --save-dev <package_name>` to install new packages
+## Features
 
-## Loading The Chrome Extension
+- Secure form handling
+- Data validation and sanitization
+- Example form submission and processing
+- Reference for future WordPress projects
 
-1. Open Chrome and navigate to `chrome://extensions/`
-2. Toggle on `Developer mode` in the top right corner
-3. Click `Load unpacked`
-4. Select the entire `dist` folder
+## Installation
 
-## Production Build
+1. Download the plugin files.
+2. Upload the plugin folder to the `/wp-content/plugins/` directory.
+3. Activate the plugin through the 'Plugins' menu in WordPress.
 
-1. `npm run build` to generate a minimized production build in the `dist` folder
-2. ZIP the entire `dist` folder (e.g. `dist.zip`)
-3. Publish the ZIP file on the Chrome Web Store Developer Dashboard!
+## Usage
 
-## Initial Steps
+This plugin provides an example form and demonstrates how to handle form submissions securely. To use the form in your WordPress site, follow these steps:
 
-1. `git init` to start a new git repo for tracking your changes, do an initial base commit with all the default files
-2. Update `package.json`, important fields include `author`, `version`, `name` and `description`
-3. Update `manifest.json`, important fields include `version`, `name` and `description`
-4. Update `webpack.commmon.js`, the title in the `getHtmlPlugins` function should be your extension name
+1. Include the form in your desired location by adding the following shortcode:
+    ```php
+    [example_form]
+    ```
+2. The form will be rendered and ready to use. Upon submission, the form data will be processed according to the best practices implemented in the plugin.
 
-## Default Boilerplate Notes
+## Code Overview
 
-- Folders get flattened, static references to images from HTML do not need to be relative (i.e. `icon.png` instead of `../static/icon.png`)
-- Importing local ts/tsx/css files should be relative, since Webpack will build a dependancy graph using these paths
-- Update the manifest file as per usual for chrome related permissions, references to files in here should also be flattened and not be relative
+- **`form-handler.php`**: Main plugin file that handles form submission and processing.
+- **`includes/`**: Directory containing additional PHP files for form handling and processing.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or find any issues, feel free to open an issue or submit a pull request.
+
+## License
+
+This plugin is free and open-source software licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute this code.
+
+## Contact
+
+If you have any questions or need further assistance, please contact the plugin author at [your-email@example.com].
+

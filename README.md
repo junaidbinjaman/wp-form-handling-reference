@@ -42,5 +42,5 @@ This plugin is free and open-source software licensed under the [MIT License](ht
 
 ## Contact
 
-If you have any questions or need further assistance, please contact the plugin author at [your-email@example.com].
+If you have any questions or need further assistance, please contact the plugin author at [me@junaidbinjaman.com].
 
